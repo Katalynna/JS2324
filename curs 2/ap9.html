@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Aici definim variabila n cu prompt pentru ca utilizatorulñ sa introduca ce nr vrea
+        let n = prompt('Numarul este ', 15);
+
+        //Inizializam suma cu 0
+        let suma = 0;
+
+        //Initializam produsul cu 1, deoarece daca initializam cu 0, imultirea dadea 0
+        let produs = 1;
+
+        // Utilizam pt suma si produs instructiunea for:
+        for( let i=1; i<=n; i++){
+
+            //Suma numerelor pare se calculeaza astfel :
+            if( i % 2 == 0){
+            suma = suma + i;
+            }
+            // de aici in jos calculam produsul numerelor impare
+            else{
+                produs=produs*i;
+            }
+        }
+
+        // Afisam in consola rezultatul
+        console.log(suma);
+
+       
+
+     
+
+    </script>
+</body>
+</html>

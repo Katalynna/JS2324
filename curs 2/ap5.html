@@ -1,0 +1,31 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //Cerinta :Se citeste un numar nenul, pozitiv. Se scrie DA daca este pozitiv, iar NU daca este negativ
+        
+        //Rezolvare:
+
+        // Putem pune variabila cu prompt, asa interactionam cu utilizatorul si de asemena ii putem da un nr implicit
+        let x = prompt('Va rugam introduceti un numar' , 8);
+
+        if (x % 2 == 0) {
+
+            // Putem scrie : + x +,  cu o varianta interpolara : ${x}. Ambele sunt corecte.
+            console.log(`Numarul  ${x} este par`);
+        }
+        else {
+            console.log('Numarul ' + x + ' este impar');
+        }
+
+    </script>
+</body>
+
+</html>

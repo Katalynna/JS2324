@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x = 12, y=23 ,c =3;
+        console.log( 35 == 23);
+        console.log( '35' !== 35);
+      
+
+        // operatorul logic && (si)
+        // Va fi adevarat pentru ca un singur egal inseamna atribuire, ceea ce inseamna ca este adevarat
+        console.log( ( x = 10) && (y<=24 ));
+
+        // operatorul logic || (sau)
+        console.log( ( x = 10) || (y<=24 ));
+
+        // operator pe biti
+
+        console.log( ( x = 10) & (y<=24 ));
+        console.log( ( x = 10) & (y<=24 ));
+        console.log(~c);
+        console.log(3<<2);
+
+        // operatorul ternar
+        // daca expresia dinaintea semnului ? este adevarata, se va afisa ceea ce este imediat dupa semnul ?
+        // daca expresia dinaintea semnului ? este falsa, se va afisa dupa cele doua puncte :
+
+        console.log( (x==10) ? 'Valoarea este adevarata' : 'Valoarea este falsa');
+
+        // operatorul null- in cazul in care definim o variabila dar nu ii atribuim nici o valoare
+
+        console.log( x ?? 'valoarea nu este definita');
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //Cerinta : sa se afiseze minimul si maximul din n numere citite de la tastatura.
+
+        // Pasul 1 : trebuie sa alegem cate numere de la tastatura vrem sa citim
+
+        let n = prompt ('Numarul n', 10);
+        let min = 999;
+        let max = 0;
+
+        for(let i=1; i<n; i++){
+
+            // Se va afisa utilizatorului sa introduca un numar arbitrar de numere
+
+            let numar =prompt('Numarul introdus este :');
+
+            //Dupa introducerea numarului arbitrar, se va afisa sa se introduca unul cate unul din numerele arbitrare dorite
+            
+            // Acum se va compara daca numarul este mai mare sau egal cu nr maxim arbitrar introdus
+            if(numar>= max){
+                //Nr maxim va fi nr maxim introdus
+                max= numar;
+            }
+
+            // Aici facem acelasi lucru pentru nr minim arbitrar introdus
+            if(numar<=min){
+                min=numar;
+            }
+        }
+
+
+        // Aici vom afisa car nr e maxim si minim dintre cele arbitrare introduse, in consola
+        console.log('max este ', max);
+        console.log('min este ', min);
+
+
+
+    </script>
+</body>
+</html>

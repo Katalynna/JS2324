@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //Se dau 2 nr, dar scrise cu prompt(primeste decat siruri de caractere)
+
+        let a= prompt("Primul numar este?",2);
+        let b= prompt("Al doilea numar este?",3);
+
+        //Cu typeof vedem ce tip de caractere sunt nr a si b
+       
+        console.log(typeof a);
+        console.log(typeof b);
+
+        //aici nu va calcula suma, doar va concatena:
+        //varianta 1
+        //alert ("Suma numerelor este :" + (a+b));
+
+        //Pentru a face adunarea putem face in felul urmator:
+        //varianta 2
+        alert ("Suma numerelor este :" + (Number(a) +(Number(b))));
+    </script>
+</body>
+</html>
