@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Sortare [5,9,2,1,5,6] </p>
+    <script>
+        let myArr = [5,9,2,1,5,6] ;
+        let lungime =myArr.length; // afisam lungimea
+
+        // Am folosit bucla for pentru ca este o structura repetitiva si stim cat este lungimea sirului
+        // Vom trece prin sir, let i=0 ...va spune de unde incepem, incepem de la 0 pentru ca de la 0 incepe indexarea
+        // i<lungime ... trebuiue sa fie mai mica decat lungimea
+        // i++ ...incrementam la fiecare iteratie
+        for( let i=0; i<lungime; i++){
+
+            // vom utiliza o alta bucla pentru a lua primul element si al compara cu celelalte
+            for(let j=0; j<lungime;j++){
+
+                // aici punem conditia daca primul element este mai mare decat al doilea
+                if(myArr[j] <= myArr[j +1]){
+
+                    // si daca este mai mic si vrem sa schimbam pozitia, vom crea o alta variabila temporala pentru a putea face schimbarea intre ele 
+                    let temp =myArr[j];
+                    myArr[j] = myArr[j +1];
+                    myArr[j +1]= temp;
+                    
+                }
+            }
+        }
+         // aici afisam array-ul nostru
+         console.log(myArr);
+
+
+
+         /*O alta posibilitate de a sorta array-ul nostru 
+         era ca la final :   console.log(myArr.sort());, fara sa scriem toate for-urile*/
+
+    </script>
+    
+</body>
+</html>

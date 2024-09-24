@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function suma(a,b,c){
+
+            console.log(typeof a);
+            if((typeof a == 'number') && (typeof b =='number') && (typeof c=='number')){
+                return a+b+c;
+            }else{
+                return 0;
+            }
+            
+        }
+        console.log(suma(1,2,3)); 
+        
+        console.log(suma(4,6,10));
+
+        console.log(suma("a",6,10)); // aici nu va mai face adunare, va face decat concatenare
+
+
+
+            /*
+        Pasul 1: Definim functia
+
+            function suma(a,b,c){
+
+        Pasul 2: Aici am folosit if deoarece trebuie sa ne asiguram ca datele introduse vor fi numere si nu siruri de caractere
+          
+            if((typeof a == 'number') && (typeof b =='number') && (typeof c=='number')){
+                return a+b+c;
+            }else{
+                return 0;
+            }
+            
+        }
+
+        Pasul 3: Afisam rezultatul in consola 
+
+        console.log(suma(1,2,3)); // 1 va primi val lui a, 2 lui b si 3 lui c
+        
+        console.log(suma(1,2,3)) >>>>> o putem scrie si asa : 
+                      // definim o alta variabila : 
+              let sumaNr = suma(1,2,3);
+              console.log(sumaNr);
+
+        // ceea ce am facut mai devreme este ca am definit o variabila pe care o putem folosi si mai incolo, in cazul in care avem nevoie de ea in cod.
+        
+        
+        console.log(suma(4,6,10)); Aici am dat alte valori
+
+        console.log(suma("a",6,10)); // daca unul din parametri nu este numar, ci este string, va face decat concatenare, daca nu specificam in coditie cu if sa fie numar
+        
+*/
+    </script>
+</body>
+</html>

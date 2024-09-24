@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Orice arrayu este si obiect
+        // Dar nu orice obiect este array
+        // Obiectele nu au lungime
+        // In interiorul oniectului sau array-ului punem decat virgule
+
+
+        var myArr = ["a", "b","c"]; // este obiect
+        var newArr = {
+            0 : "a",
+            1 : "b",
+            2 : "c",
+            litera : "d"
+        }
+
+
+        console.log(typeof myArr); // este obiect
+
+        console.log(myArr);
+        console.log(myArr[1]); // aici doar am selectat pe b care are indexul 1
+
+        console.log(myArr.length);
+
+
+        console.log(typeof newArr);
+
+        console.log(newArr);
+        console.log(newArr[1]); 
+        
+        console.log(newArr.length);
+
+
+        // Daca vrem sa folosim array ca in exemplu :  console.log(myArr[1]);, folosim paranteze patrate.
+        // Daca vrem sa folosim obiecte, folosim punctul
+    </script>
+</body>
+</html>
