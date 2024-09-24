@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const a=50;
+        let b;
+
+        // cele doua semne de intrebare ?? (null) spune ca daca in stanga sa este o var nedefinita sau nula, 
+        //acesta va prelua valoarea din dreapta
+        //in cazul nostru avem o constanta si o var care este nedefinita
+
+        a ??= 10;
+        console.log(a); // a va primi valoarea sa definita anterior pentru ca este o constanta
+
+        b ??= 25;
+        console.log(b); // b va prelua valoarea din dreapta pentru ca nu i-a fost atribuita nici o valoare
+
+        
+
+    </script>
+</body>
+</html>

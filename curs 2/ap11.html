@@ -1,0 +1,58 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Sa se afiseze numerele impare pana la un numar n citit de 
+        la tastatura.</h3>
+
+        
+        <script>
+            //Rezolvarea cu structura while
+
+
+            //Initializam var x
+            let x= 1, y=1;
+
+            //
+            n=eval(prompt('dati numarul:'));
+
+            //cat timp x easte mai mic decat n afisat in browser, afisam x
+            while (x<=n){
+                document.write('<br> x este :' + x);
+
+                //Incrementam valuarea lui x cu 2
+                x+=2;
+            }
+
+
+
+
+            //Rezolvarea problemei cu structura for
+
+           /* for(let i=1; i<=n; i=i+2 ){
+                document.write('<br> x este :' + x);
+
+            }*/
+
+
+
+
+
+            //Rezolvarea problemei cu structura do while
+
+            do{
+                document.write('<br> y este :' + y);
+                y+=2;
+            }
+            while (y<=n);
+
+
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n=15;
+
+        //Daca vrem sa afisam daca un nr este par sau impar
+
+        for(let i=1; i<=n; i++){
+        
+            //Aici am folosit structura continue, nu va intrerupe programul , doar va sari peste o etapa
+            //In acest caz nu il va scrie pe 6
+            //Trebuie sa punem conditia cu continue, inainte de a scrie structura cu if, deoarece trebuie pus pana se va lua decizia daca numerele sunt pare sau impare
+
+            if(i == 6){
+            //break;
+            continue;
+        }
+
+        //Daca activam pe cea cu break, se intrerupea brusc structura.
+
+            if( i % 2 == 0){
+                console.log(`${i} este par`);
+            }else{
+                console.log(`${i} este impar`);
+            }
+     
+        }
+        console.log('Am ajuns la final');
+
+
+
+    </script>
+</body>
+</html>
