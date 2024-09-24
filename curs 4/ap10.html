@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Metoda clasica</h1>
+    <script>
+        // functia nu returneaza nimic, nu se poate folosi intr-o expresie
+        function sumaNr(a,b){
+            console.log(a+b);
+        }
+
+        sumaNr(2,3);
+    </script>
+    
+    
+    <h1>Functii clasice cu return</h1>
+    <script>
+        // returneaza o valoare
+        function suma2(a,b){
+            return a+b;
+        }
+        let mySuma = suma2(2,3);
+        console.log(mySuma);
+    </script>
+
+
+
+    <h1>Functii anonime</h1>
+    <script>
+        // Cand se defineste o  functioe anonima trebuie sa o atribuim
+        let suma = function (a,b){return a+b};
+        console.log(suma);
+        console.log(suma(2,3));
+    </script>
+
+
+
+
+    <h1>Functii lambada</h1>
+    <script>
+         // functia cea mai compacta
+        //Functie anonima de tip arrow, nu mai avem cuvantul function. daca 
+    var anononima = (a,b) => a+b; //daca am o singura instructiune
+
+    //sau
+// functie anonima de tip arrow
+    var anonima2 =(a,b) =>{return a+b};
+    console.log(anonima2(2,3));
+    </script>
+</body>
+</html>

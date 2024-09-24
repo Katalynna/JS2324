@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let myArr = [5, 7, 1, 2, 9, 3, 4];
+        console.log(myArr);
+
+        //reduce este specifica JS, trece prin element si zice primul element adaugal la suma, al doilea elem adaugal la suma 
+        let suma = myArr.reduce(function(s,a){
+            return s + a;
+        })
+        let newArr = myArr.sort(). reverse(); // sortat crescator si punem punct si dupa sortam descrescator 
+        console.log(suma);
+        console.log(newArr);
+
+
+        // forEach pentru obiecte si este cam la fel cu  for, dar nu mai folosim incrementarea, el are incorporat
+        let suma2 =0;
+
+        myArr.forEach(function(a){suma2 = suma2 + a});
+        console.log(suma2);
+
+    </script>
+</body>
+</html>
